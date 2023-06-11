@@ -23,7 +23,8 @@ AppDataSource.initialize().then(async connection => {
       name: req.body.name,
       address: req.body.address,
       email: req.body.email,
-      phone: req.body.phone
+      phone: req.body.phone,
+      note : req.body.note
     };
 
     const phone = await PhoneBookRepo.save(phoneData);

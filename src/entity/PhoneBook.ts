@@ -22,8 +22,8 @@ import {
     @Column({ type: "varchar" })
     public phone: string;
 
-    @Column({ type: "varchar" })
-    public note: string;
+    // @Column({ type: "varchar", default: null})
+    // public note: string;
 
     @Column({ type: 'timestamp', default: () => "CURRENT_TIMESTAMP" })
     public created_at: string;
